@@ -1,0 +1,9 @@
+{
+  "expoServerPort": 19000,
+  "expoServerNgrokUrl": "https://ct-6ge.shafin-ashraf.test.exp.direct",
+  "packagerNgrokUrl": "https://packager.ct-6ge.shafin-ashraf.test.exp.direct",
+  "ngrokPid": 7984,
+  "devToolsPort": 19002,
+  "packagerPort": 19001,
+  "packagerPid": 5272
+}
