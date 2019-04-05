@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "test",
-    "slug": "test",
+    "name": "DseBD",
+    "slug": "dsebd",
     "privacy": "public",
     "sdkVersion": "32.0.0",
     "platforms": [
@@ -9,13 +9,13 @@
       "android"
     ],
     "android": {
-      "package": "com.yourcompany.test"
+      "package": "com.testcompany.dsebd"
     },
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/graph.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/splash.jpg",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -27,6 +27,8 @@
     ],
     "ios": {
       "supportsTablet": true
-    }
+    },
+    "description": "Real-Time Dhaka stock exchange stock price monitor.",
+    "githubUrl": "https://github.com/Shafin098/dsebd_react"
   }
 }
