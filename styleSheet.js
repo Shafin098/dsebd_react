@@ -11,18 +11,12 @@ const styles = StyleSheet.create({
     dataContainer: {
         flexDirection: 'row',
         padding: 20,
-        margin: 4,
+        margin: 5,
+        borderColor: '#eee',
+        borderWidth: 1,
         borderRadius: 5,
         backgroundColor: "#fff",
         fontWeight: 'bold',
-        shadowColor: '#000',
-        shadowOffset: {
-            width: 1,
-            height: 1,
-        },
-        shadowOpacity: 0.20,
-        shadowRadius: 1.41,
-        elevation: 1,
     },
     dataTicker: {
         flex: 2,

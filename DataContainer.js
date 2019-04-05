@@ -1,11 +1,8 @@
 import React from 'react';
 import {
-    ScrollView,
-    StyleSheet,
     Text,
     View,
-    FlatList,
-    StatusBar
+    TouchableOpacity,
 } from 'react-native';
 import styles from './styleSheet';
 
@@ -16,11 +13,11 @@ export default class DataContainer extends React.Component {
             this.colorChange = this.colorChange.bind(this);
         }
 
-        componentShouldUpdate(nextProps) {
-            if (nextProps.data[2] === this.props.data[2]) {
-                return false;
-            } else {
+        shouldComponentUpdate(nextProps) {
+            if (nextProps.data[2] !== this.props.data[2]) {
                 return true;
+            } else {
+                return false;
             }
         }
 
@@ -44,12 +41,12 @@ export default class DataContainer extends React.Component {
                 const percentChange = this.props.data[3];
 
         return (
-            <View key={symbol} style={styles.dataContainer}>
+            <TouchableOpacity key={symbol} style={styles.dataContainer}>
                 <Text  style={styles.dataTicker}> {symbol} </Text>
                 <Text  styles={styles.dataPrice}> {currentPrice} </Text>
                 <Text  style={[styles.dataPriceChange, this.colorChange(priceChange)]}> {priceChange} </Text>               
                 <Text style={[styles.dataPriceChange, this.colorChange(priceChange)]}> {percentChange} </Text>
-            </View>
+            </TouchableOpacity>
         )      
     }
 }
